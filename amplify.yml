@@ -8,9 +8,9 @@ frontend:
         - yarn install
     build:
       commands: 
-        - yarn run build
+        - yarn build
   artifacts:
-    baseDirectory: /.svelte-kit/output
+    baseDirectory: /build
     files:
       - '**/*'
   cache:
