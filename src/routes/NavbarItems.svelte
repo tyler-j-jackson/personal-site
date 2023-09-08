@@ -10,6 +10,10 @@
 		{
 			href: '/about',
 			title: 'About'
+		},
+		{
+			href:'/projects',
+			title: 'Projects'
 		}
 	];
 </script>
