@@ -10,7 +10,7 @@ frontend:
       commands: 
         - yarn run build
   artifacts:
-    baseDirectory: /src
+    baseDirectory: /.svelte-kit/output
     files:
       - '**/*'
   cache:
