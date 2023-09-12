@@ -5,29 +5,37 @@
 	let links = [
 		{
 			href: '/',
-			title: 'Dashboard'
-		},
-		{
-			href: '/about',
-			title: 'About'
+			title: 'Home'
 		},
 		{
 			href:'/projects',
 			title: 'Projects'
+		},
+		{
+			href: '/info',
+			title: 'Info'
+		},
+		{
+			href:'/blog',
+			title: 'Blog'
+		},
+		{
+			href: '/contact',
+			title: 'Contact'
 		}
 	];
 </script>
 
 <div class="flex items-center">
-	<div class="flex-shrink-0">
+	<!--div class="flex-shrink-0">
 		<img
 			class="h-8 w-8"
 			src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
 			alt="Your Company"
 		/>
-	</div>
+	</div-->
 	<div class="hidden md:block">
-		<div class="ml-10 flex items-baseline space-x-4">
+		<div class="flex items-baseline space-x-4">
 			{#each links as { href, title }}
 				<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 				<ActiveLink

@@ -6,16 +6,16 @@
 <div class="min-h-full">
 	<Navbar />
 
-	<header class="bg-white dark:bg-gray-900 shadow">
+	<!--header class="bg-white dark:bg-gray-900 shadow">
 		<div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
 			<h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200">Dashboard</h1>
 		</div>
-	</header>
+	</header-->
 	<main>
 		<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
 			<!-- Replace with your content -->
 			<div class="px-4 py-6 sm:px-0">
-				<div class="h-96 rounded-lg border-4 border-dashed border-gray-200 dark:border-gray-900">
+				<div class="min-h-[100px] rounded-lg border-4 border-dashed border-gray-500 dark:border-gray-100 box-inward-padding p-2.5">
 					<slot />
 				</div>
 			</div>
@@ -23,3 +23,16 @@
 		</div>
 	</main>
 </div>
+
+<!--Footer-->
+<!--
+<div class="fixed bottom-0 w-full bg-white dark:bg-gray-900 p-4">
+	<p class="text-center text-gray-700 dark:text-white">This is some content at the bottom of the page.</p>
+  </div>
+-->
+
+<style>
+	.box-inward-padding {
+	  box-sizing: border-box;
+	}
+</style>
