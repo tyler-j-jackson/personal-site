@@ -34,7 +34,7 @@
 <h1 class="dark:text-white dark-dark-900">
 	<div class="flex flex-col items-baseline space-x-4">
 		<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-		<a class="text-blue-500 font-bold" href="/src/TylerJacksonSoftwareEngineer.pdf" target="_blank">My resume.</a>
+		<a class="text-blue-500 font-bold" href="https://tylerpersonalsitebucket.s3.us-west-2.amazonaws.com/TylerJacksonSoftwareEngineer.pdf" target="_blank">My resume.</a>
 	</div>
 </h1>
 
