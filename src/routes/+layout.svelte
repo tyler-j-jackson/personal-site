@@ -1,4 +1,8 @@
 <script lang="ts">
+	
+	import Footer from '../Footer.svelte'
+	import Header from '../Header.svelte'
+
 	import '../app.css';
 	import Navbar from './Navbar.svelte';
 </script>
@@ -32,7 +36,22 @@
 -->
 
 <style>
-	.box-inward-padding {
-	  box-sizing: border-box;
+	.layout {
+		height: 100%;
+		max-inline-size: 1440px;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		margin-inline: auto;
+		padding-inline: var(--size-7);
+	}
+
+	main {
+		padding-block: var(--size-9);
+	}
+
+	@media (min-width: 1440px) {
+		.layout {
+			padding-inline: 0;
+		}
 	}
 </style>

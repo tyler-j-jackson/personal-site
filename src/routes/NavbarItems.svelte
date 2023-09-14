@@ -16,12 +16,12 @@
 			title: 'Info'
 		},
 		{
-			href:'/blog',
-			title: 'Blog'
-		},
-		{
 			href: '/contact',
 			title: 'Contact'
+		},
+		{
+			href: '/blog',
+			title: 'Blog'
 		}
 	];
 </script>

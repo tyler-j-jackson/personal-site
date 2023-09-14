@@ -5,5 +5,11 @@ module.exports = {
 	theme: {
 		extend: {}
 	},
-	plugins: []
+	plugins: [],
+	variants: {
+		extend: {
+			borderColor: ['last'],
+			paddingBottom: ['last'],
+		}
+	}
 };
