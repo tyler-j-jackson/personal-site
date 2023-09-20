@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import ThemeToggle from './ThemeToggle.svelte';
 	let links = [
 		{
 			href: '/',
@@ -40,7 +41,7 @@
   {/each}
   </ul>
   <!-- Theme -->
-  <button>Toggle</button>
+  <!--ThemeToggle /-->
 </nav>
 
 <style>

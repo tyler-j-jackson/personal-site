@@ -25,7 +25,7 @@ const config = {
     kit: {
         adapter: adapter(),
         files: {
-            assets: 'src/lib/posts/*.md'
+            assets: '$lib/posts/*.md'
         },
         prerender:{
             handleHttpError: 'ignore'
