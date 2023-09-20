@@ -23,9 +23,7 @@ const config = {
     ],
 
     kit: {
-        adapter: adapter({
-            fallback: 'index.html',
-        }),
+        adapter: adapter(),
         files: {
             assets: 'src/lib/posts/*.md'
         },
