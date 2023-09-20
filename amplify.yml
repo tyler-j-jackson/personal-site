@@ -10,7 +10,7 @@ frontend:
       commands: 
         - yarn build
   artifacts:
-    baseDirectory: /.vercel/output
+    baseDirectory: /.vercel/output/static
     files:
       - '**/*'
   cache:
