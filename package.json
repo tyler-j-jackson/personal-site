@@ -49,6 +49,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"mdsvex": "^0.11.0"
+		"@fontsource/jetbrains-mono": "^5.0.12",
+		"@fontsource/manrope": "^5.0.12",
+		"lucide-svelte": "^0.279.0",
+		"mdsvex": "^0.11.0",
+		"open-props": "^1.5.16"
 	}
 }

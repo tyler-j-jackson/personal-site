@@ -24,27 +24,30 @@
 
 
 <style>
-    .posts {
-        @apply grid gap-8;
-    }
+	.posts {
+		display: grid;
+		gap: 2rem;
+	}
 
-    .post {
-        @apply max-w-screen-md;
-    }
+	.post {
+		max-inline-size: var(--size-content-3);
+	}
 
-    .post:not(:last-child) {
-        @apply border-b border-gray-300 pb-8 last:border-b-0;
-    }
+	.post:not(:last-child) {
+		border-bottom: 1px solid var(--border);
+		padding-bottom: var(--size-7);
+	}
 
-    .title {
-        @apply text-4xl capitalize;
-    }
+	.title {
+		font-size: var(--font-size-fluid-3);
+		text-transform: capitalize;
+	}
 
-    .date {
-        @apply text-gray-600;
-    }
+	.date {
+		color: var(--text-2);
+	}
 
-    .description {
-        @apply mt-4;
-    }
+	.description {
+		margin-top: var(--size-3);
+	}
 </style>

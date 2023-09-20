@@ -14,41 +14,46 @@
 <article>
   <!-- Title -->
 	<hgroup>
-		<h1 class="dark:text-gray-500">{data.meta.title}</h1>
+		<h1>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
 	</hgroup>
 
   <!-- Tags -->
-	<div class="tags dark:text-white">
+	<div class="tags">
 		{#each data.meta.categories as category}
 			<span class="surface-4">&num;{category}</span>
 		{/each}
 	</div>
 
   <!-- Post -->
-	<div class="prose dark:text-white">
+	<div class="prose">
 		<svelte:component this={data.content} />
 	</div>
 </article>
 
 <style>
-    .article {
-        @apply max-w-screen-md mx-auto;
-    }
+	article {
+		max-inline-size: var(--size-content-3);
+		margin-inline: auto;
+	}
 
-    h1 {
-        @apply text-4xl capitalize;
-    }
+	h1 {
+		text-transform: capitalize;
+	}
 
-    h1 + p {
-        @apply mt-2 text-gray-600;
-    }
+	h1 + p {
+		margin-top: var(--size-2);
+		color: var(--text-2);
+	}
 
-    .tags {
-        @apply flex gap-3 mt-7;
-    }
+	.tags {
+		display: flex;
+		gap: var(--size-3);
+		margin-top: var(--size-7);
+	}
 
-    .tags > * {
-        @apply py-2 px-3 rounded-full;
-    }
+	.tags > * {
+		padding: var(--size-2) var(--size-3);
+		border-radius: var(--radius-round);
+	}
 </style>

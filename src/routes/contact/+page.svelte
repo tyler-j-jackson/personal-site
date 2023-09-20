@@ -4,8 +4,6 @@
 </svelte:head>
 
 <script lang="ts">
-	import ActiveLink from "../ActiveLink.svelte";
-
 	let contacts = [
 		{
 			name: 'Email me at tyler.j.jackson@outlook.com',

@@ -1,21 +1,23 @@
 <script lang="ts">
-	
-	import Footer from '../Footer.svelte'
-	import Header from '../Header.svelte'
-
 	import '../app.css';
-	import Navbar from './Navbar.svelte';
 	import Transition from './Transition.svelte';
+	import 'open-props/style'
+	import 'open-props/normalize'
+	import 'open-props/buttons'
+	import Footer from './Footer.svelte';
+	import Header from './Header.svelte';
 
 	export let data;
 </script>
 
 
 <div class ="layout">
-	<Navbar />
+	<Header />
 	<main>
 		<Transition url={data.url}><slot/></Transition>
 	</main>
+
+	<Footer />
 </div>
 <!--Footer-->
 <!--
